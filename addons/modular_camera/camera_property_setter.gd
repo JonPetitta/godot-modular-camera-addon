@@ -38,7 +38,7 @@ func _base_stop(): # FP
 	_stop()
 
 
-func _base_base_input(event: InputEvent) -> void:
+func _base_base_input(event: InputEvent):
 	if not active:
 		ModularCameraUtils.print_detailed_err("Trying to input behaviour/modifier, but it is stopped. active will be set to true.")
 		active = true
@@ -60,11 +60,11 @@ func _stop():
 	pass
 
 
-func _base_input(event: InputEvent) => void:
+func _base_input(event: InputEvent):
 	pass
 
 
-func _input(event: InputEvent) => void:
+func _input(event: InputEvent):
 	pass
 
 
