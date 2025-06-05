@@ -53,6 +53,8 @@ func _stop():
 	for modifier in modifiers:
 		modifier._base_stop()
 
+func _base_input(event: InputEvent) => void:
+	_input(event)
 
 func _base_process(delta: float):
 	_process(delta)
